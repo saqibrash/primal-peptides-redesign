@@ -181,10 +181,10 @@
 .research-notice-inverse strong, .research-notice-inverse span { color: inherit; }
 .research-notice-inverse > svg { color: var(--highlight); }
 .site-header { position: sticky; top: 0; z-index: 40; border-bottom: 1px solid color-mix(in oklab, var(--border) 75%, transparent); background: color-mix(in oklab, var(--background) 94%, transparent); backdrop-filter: blur(14px); }
-.header-inner { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; min-height: 76px; gap: 1rem; }
-.brand-emblem { position: relative; display: grid; width: 43px; height: 43px; place-items: center; flex-shrink: 0; border-radius: var(--radius); background: var(--surface-dark); color: var(--primary); overflow: hidden; }
-.brand-elephant { position: absolute; left: 8px; font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--highlight); }
-.brand-emblem svg { position: absolute; right: 4px; width: 18px; opacity: .7; }
+.header-inner { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; min-height: 92px; gap: 1rem; }
+.brand-mark { display: block; width: 92px; line-height: 0; flex-shrink: 0; }
+.brand-mark img { display: block; width: 100%; height: auto; object-fit: contain; }
+.site-footer .brand-mark { width: 154px; }
 .desktop-nav { display: none; align-items: center; gap: 2.1rem; font-size: .84rem; font-weight: 700; }
 .desktop-nav a { padding-block: 1.8rem; border-bottom: 2px solid transparent; }
 .desktop-nav a:hover, .desktop-nav .nav-active { color: var(--primary-strong); border-color: var(--primary); }
@@ -346,6 +346,9 @@
   .research-strip .research-notice > svg { display: none; }
   .research-strip .research-notice div { justify-content: center; gap: .25rem .65rem; }
   .research-strip .research-notice strong, .research-strip .research-notice span { font-size: .6rem; }
+  .header-inner { min-height: 80px; }
+  .brand-mark { width: 70px; }
+  .site-footer .brand-mark { width: 138px; }
   .cart-link span { display: none; }
   .hero-section { min-height: 700px; }
   .hero-shade { background: linear-gradient(90deg, oklch(0.12 0.04 245 / 97%), oklch(0.13 0.045 245 / 76%)); }
